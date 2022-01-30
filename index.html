@@ -62,18 +62,33 @@
 
         <ul class="sm:flex sm:space-x-4 hidden">
           <li class="py-2">
-            <a href="#home" class="hover:text-[#cf0015]"> Home</a>
+            <a
+              href="#home"
+              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
+            >
+              Home</a
+            >
           </li>
           <li class="py-2">
-            <a href="#about" class="hover:text-[#cf0015]"> About</a>
+            <a
+              href="#about"
+              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
+            >
+              About</a
+            >
           </li>
           <li class="py-2">
-            <a href="#services" class="hover:text-[#cf0015]"> Services</a>
+            <a
+              href="#services"
+              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
+            >
+              Services</a
+            >
           </li>
           <li class="py-2">
             <a
               href="#contact"
-              class="hover:text-[#cf0015] bg-[#cf0015] p-2 rounded-md text-white"
+              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4 bg-[#cf0015] p-2 rounded-md text-white"
             >
               Contact Us</a
             >
@@ -95,12 +110,20 @@
           </div>
           <ul class="sm:flex sm:space-x-4" id="menu">
             <li class="py-4">
-              <a onClick="closeMenu()" href="#home" class="hover:text-[#cf0015]">
+              <a
+                onClick="closeMenu()"
+                href="#home"
+                class="hover:text-[#cf0015]"
+              >
                 Home</a
               >
             </li>
             <li class="py-4">
-              <a onClick="closeMenu()" href="#about" class="hover:text-[#cf0015]">
+              <a
+                onClick="closeMenu()"
+                href="#about"
+                class="hover:text-[#cf0015]"
+              >
                 About</a
               >
             </li>
@@ -129,21 +152,16 @@
     </nav>
     <!-- navbar finished -->
     <!-- hero start -->
-    <div
-      class="bg-[url('./assets/images/home.jpg')] h-96 bg-cover bg-no-repeat bg-center sm:h-[70vh] lg:h-[90vh]"
-      id="home"
-    >
+    <div class="hero h-96 sm:h-[70vh] lg:h-[90vh]" id="home">
       <div
         class="w-11/12 mx-auto absolute left-5 lg:bottom-40 lg:left-20 bottom-80 sm:left-20"
       >
         <h1
-          class="text-lg sm:text-3xl max-w-xs font-semibold mb-4 text-white lg:text-5xl lg:max-w-2xl leading-8"
+          class="text-lg sm:text-3xl max-w-xs font-bold mb-4 text-white lg:text-5xl lg:max-w-2xl leading-12"
         >
           The
-          <span
-            class="underline decoration-wavy lg:decoration-4 decoration-2 decoration-[#cf0015] underline-offset-8"
-            >Best Cleaning Service </span
-          >in the country
+          <span class="text-[#cf0015]">Best Cleaning Service </span>in the
+          country
         </h1>
         <button
           class="bg-[#cf0015] hover-black px-4 py-2 rounded-lg text-white hover:ring-2 hover:ring-[#cf0015] hover:bg-transparent"
@@ -264,6 +282,7 @@
               class="form-control"
               id="floatingInput"
               placeholder="Jhon Doe"
+              required
             />
             <label for="floatingInput">Your Name</label>
           </div>
@@ -273,6 +292,7 @@
               class="form-control"
               id="floatingInput"
               placeholder="name@example.com"
+              required
             />
             <label for="floatingInput">Email address</label>
           </div>
@@ -282,6 +302,7 @@
               class="form-control"
               id="floatingInput"
               placeholder="Subject"
+              required
             />
             <label for="floatingInput">Subject</label>
           </div>
@@ -291,6 +312,7 @@
               placeholder="Message"
               id="floatingTextarea2"
               style="height: 150px"
+              required
             ></textarea>
             <label for="floatingTextarea2">Message</label>
           </div>

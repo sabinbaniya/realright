@@ -21,14 +21,11 @@ close.addEventListener("click", closeMenu);
 
 /* Testimonial Scroll start */
 const testimonial = document.querySelectorAll(".testimonial");
-window.onresize = checkResize;
 
 let counter = 1;
 
-function checkResize() {
-  if (window.innerWidth > 640) {
-    setInterval(autoScroll, 5000);
-  }
+if (window.innerWidth > 640) {
+  setInterval(autoScroll, 5000);
 }
 
 function autoScroll() {
