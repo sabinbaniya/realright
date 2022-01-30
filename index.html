@@ -46,6 +46,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <link rel="stylesheet" href="./assets/styles/style.css" />
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body
@@ -53,9 +54,7 @@
     class="text-[#181c16]"
   >
     <!-- navbar -->
-    <nav
-      class="flex px-4 justify-between items-center py-2 shadow-md sticky top-0 bg-white"
-    >
+    <nav class="flex px-4 justify-between items-center py-2 shadow-md bg-white">
       <div>
         <img src="./assets/images/logo.png" alt="Real Right" class="w-16" />
       </div>
@@ -87,7 +86,7 @@
     <!-- navbar finished -->
     <!-- hero start -->
     <div
-      class="bg-[url('./assets/images/home.jpg')] h-96 bg-cover bg-no-repeat bg-right-top bg-fixed sm:h-[70vh]"
+      class="bg-[url('./assets/images/home.jpg')] h-96 bg-contain bg-no-repeat bg-right-top sm:h-[70vh]"
       id="home"
     >
       <div class="w-11/12 mx-auto">
@@ -105,7 +104,7 @@
     </div>
     <!-- hero end -->
     <!-- about us start -->
-    <div class="py-4 mx-auto" id="about">
+    <div class="py-4 mx-auto pt-4" id="about">
       <h3
         class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
       >
@@ -124,7 +123,14 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
             tenetur ab autem, voluptatum voluptatem harum natus officia nam
             eligendi commodi asperiores, quas libero ducimus ex atque maxime
-            voluptate dolor id.
+            voluptate dolor id. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Ipsum quis laboriosam, necessitatibus facilis,
+            reprehenderit harum iusto maxime atque quos molestiae tempore!
+            Quidem fugiat sequi delectus alias laborum maiores, quae quas! Lorem
+            ipsum dolor sit amet, consectetur adipisicing elit. Maxime inventore
+            autem adipisci tenetur ad quaerat tempore atque repudiandae, sequi
+            blanditiis! Vel repellat assumenda iure illo libero quas. Vel,
+            expedita quisquam?
           </p>
         </div>
       </div>
@@ -132,6 +138,63 @@
     <!-- about us finished -->
     <!-- our services start -->
     <!-- our services end -->
+    <!-- testimonials start -->
+    <div>
+      <h3
+        class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
+      >
+        What Our Clients Say
+      </h3>
+
+      <div class="visible-testimonial">
+        <div class="testimonial testimonial1 rounded-lg">
+          <img src="./assets/images/avatar-anisha.png" alt="Anisha Ali" />
+          <p class="name">Anisha Li</p>
+          <p>
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </p>
+        </div>
+
+        <div class="testimonial testimonial2 rounded-lg">
+          <img src="./assets/images/avatar-ali.png" alt="Ali Bravo" />
+          <p class="name">Ali Bravo</p>
+          <p>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </p>
+        </div>
+
+        <div class="testimonial testimonial3 rounded-lg">
+          <img src="./assets/images/avatar-richard.png" alt="Richard Shanai" />
+          <p class="name">Richard Watts</p>
+          <p>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </p>
+        </div>
+
+        <div class="testimonial testimonial4 rounded-lg">
+          <img src="./assets/images/avatar-shanai.png" alt="Shanai Gough" />
+          <p class="name">Shanai Gough</p>
+          <p>
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </p>
+        </div>
+      </div>
+      <div class="btns">
+        <span class="myBtn active"></span>
+        <span class="myBtn"></span>
+        <span class="myBtn"></span>
+        <span class="myBtn"></span>
+      </div>
+    </div>
+    <!-- testimonials end -->
     <!-- contact us start -->
     <div class="pb-4" id="contact">
       <h3
