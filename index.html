@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Real Right Clean's LLC l Best Cleaning Service in the industry
+    </title>
+
+    <meta content="Cleaning Company USA, Real Right Cleans" name="keywords" />
+    <meta
+      content="Real Right is a US based cleaning company"
+      name="description"
+    />
+
+    <!-- Favicon -->
+    <link href="./assets/images/logo.png" rel="icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/js/main.js" defer></script>
+  </head>
+  <body
+    style="font-family: 'Poppins', sans-serif; scroll-behavior: smooth"
+    class="text-[#181c16]"
+  >
+    <!-- navbar -->
+    <nav
+      class="flex px-4 justify-between items-center py-2 shadow-md sticky top-0 bg-white"
+    >
+      <div>
+        <img src="./assets/images/logo.png" alt="Real Right" class="w-16" />
+      </div>
+      <div class="relative">
+        <i class="fas fa-bars text-2xl sm:hidden" id="icon"></i>
+        <div
+          class="bg-gray-500 h-screen w-screen opacity-50 absolute -top-6 -right-6 hidden"
+          id="overlay"
+        ></div>
+
+        <ul class="sm:flex hidden sm:space-x-4" id="menu">
+          <li class="py-2">
+            <a href="#home"> Home</a>
+          </li>
+          <li class="py-2">
+            <a href="#about"> About</a>
+          </li>
+          <li class="py-2">
+            <a href="#services"> Services</a>
+          </li>
+          <li class="py-2">
+            <a href="#contact" class="bg-[#cf0015] p-2 rounded-md text-white">
+              Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar finished -->
+    <!-- hero start -->
+    <div
+      class="bg-[url('./assets/images/home.jpg')] h-96 bg-cover bg-no-repeat bg-right-top bg-fixed sm:h-[70vh]"
+      id="home"
+    >
+      <div class="w-11/12 mx-auto">
+        <h1 class="text-xl font-semibold mb-4 pt-32 text-white">
+          The
+          <span
+            class="underline decoration-wavy decoration-2 decoration-[#cf0015] underline-offset-4"
+            >Best Cleaning Service </span
+          >in the country
+        </h1>
+        <button class="bg-[#cf0015] px-4 py-2 rounded-lg text-white">
+          Book Us Now
+        </button>
+      </div>
+    </div>
+    <!-- hero end -->
+    <!-- about us start -->
+    <div class="py-4 mx-auto" id="about">
+      <h3
+        class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
+      >
+        About Us
+      </h3>
+      <div class="py-4 w-11/12 mx-auto sm:flex">
+        <div class="flex justify-center items-center basis-1/2">
+          <img
+            src="./assets/images/about.jpg"
+            alt="About Us"
+            class="w-auto h-52 rounded-br-3xl rounded-tl-3xl sm:h-72"
+          />
+        </div>
+        <div class="py-4 text-center basis-1/2">
+          <p class="text-xl sm:text-left">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+            tenetur ab autem, voluptatum voluptatem harum natus officia nam
+            eligendi commodi asperiores, quas libero ducimus ex atque maxime
+            voluptate dolor id.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- about us finished -->
+    <!-- our services start -->
+    <!-- our services end -->
+    <!-- contact us start -->
+    <div class="pb-4" id="contact">
+      <h3
+        class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
+      >
+        Contact Us
+      </h3>
+      <form action="" class="w-11/12 mx-auto mt-4 max-w-md">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Jhon Doe"
+          />
+          <label for="floatingInput">Your Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="Subject"
+          />
+          <label for="floatingInput">Subject</label>
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Message"
+            id="floatingTextarea2"
+            style="height: 150px"
+          ></textarea>
+          <label for="floatingTextarea2">Message</label>
+        </div>
+        <div class="grid place-items-center sm:block">
+          <input
+            type="submit"
+            value="Send Message"
+            class="px-4 mt-2 text-white font-semibold rounded-lg py-2 bg-[#cf0015]"
+          />
+        </div>
+      </form>
+    </div>
+    <!-- contact us end -->
+    <!-- footer start -->
+    <footer class="bg-[#181c16] text-white text-center py-2">
+      <p>Real Right Clean's LLC &copy; <span id="year"></span></p>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>
