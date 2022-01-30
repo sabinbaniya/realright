@@ -88,7 +88,7 @@
           <li class="py-2">
             <a
               href="#contact"
-              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4 bg-[#cf0015] p-2 rounded-md text-white"
+              class="ring-2 ring-[#cf0015] p-2 rounded-md text-black hover:text-black"
             >
               Contact Us</a
             >
@@ -140,7 +140,7 @@
               <a
                 onClick="closeMenu()"
                 href="#contact"
-                class="bg-[#cf0015] p-2 rounded-md text-white hover:bg-[#cf0010]"
+                class="ring-2 ring-[#cf0015] p-2 rounded-md text-black hover:text-black"
               >
                 Contact Us</a
               >
@@ -152,12 +152,12 @@
     </nav>
     <!-- navbar finished -->
     <!-- hero start -->
-    <div class="hero h-96 sm:h-[70vh] lg:h-[90vh]" id="home">
+    <div class="hero h-screen" id="home">
       <div
-        class="w-11/12 mx-auto absolute left-5 lg:bottom-40 lg:left-20 bottom-80 sm:left-20"
+        class="w-11/12 mx-auto absolute left-5 lg:left-20 bottom-44 sm:left-20"
       >
         <h1
-          class="text-lg sm:text-3xl max-w-xs font-bold mb-4 text-white lg:text-5xl lg:max-w-2xl leading-12"
+          class="text-2xl sm:text-3xl max-w-xs font-bold mb-4 text-white lg:text-5xl lg:max-w-2xl leading-12"
         >
           The
           <span class="text-[#cf0015]">Best Cleaning Service </span>in the
@@ -166,7 +166,7 @@
         <button
           class="bg-[#cf0015] hover-black px-4 py-2 rounded-lg text-white hover:ring-2 hover:ring-[#cf0015] hover:bg-transparent"
         >
-          Book Us Now
+          <a href="#contact" class="text-white">Book Us Now</a>
         </button>
       </div>
     </div>
@@ -187,20 +187,18 @@
           />
         </div>
         <div class="py-4 text-center basis-1/2">
-          <p class="text-xl sm:text-left">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
-            tenetur ab autem, voluptatum voluptatem harum natus officia nam
-            eligendi commodi asperiores, quas libero ducimus ex atque maxime
-            voluptate dolor id. Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Ipsum quis laboriosam, necessitatibus facilis,
-            reprehenderit harum iusto maxime atque quos molestiae tempore!
+          <p class="text-md sm:text-xl sm:text-left">
+            Our company offers the best cleaning services around! We specialize
+            in general cleaning we even specialize in deep cleaning! We also use
+            nothing but the finest non-toxic natural solutions to clean your
+            business. We take pride in our work and hope you schedule a
+            walk-through TODAY!
           </p>
         </div>
       </div>
     </div>
     <!-- about us finished -->
-    <!-- our services start -->
-    <!-- our services end -->
+
     <!-- testimonials start -->
     <div>
       <h3
@@ -258,6 +256,92 @@
       </div>
     </div>
     <!-- testimonials end -->
+    <!-- our services start -->
+    <div id="services" class="h-screen">
+      <h3
+        class="pt-4 pb-4 text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
+      >
+        Our Services
+      </h3>
+      <div class="flex justify-evenly items-center flex-wrap pt-4">
+        <div
+          class="max-w-md min-w-[274px] w-1/4 bg-gray-100 text-center rounded-lg"
+        >
+          <div
+            class="w-auto h-52 bg-[url('./assets/images/service-1.jpg')] no-repeat bg-cover"
+          ></div>
+          <div class="py-4 px-4">
+            <h3 class="font-bold text-[#181c16] text-xl">
+              One Time Deep Clean
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              sed autem perspiciatis magnam eius excepturi voluptates aspernatur
+              fugiat obcaecati suscipit cumque accusantium, blanditiis odio
+              totam deserunt expedita veniam omnis. Natus.
+            </p>
+          </div>
+          <div class="pb-4">
+            <a
+              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg"
+              href="#contact"
+              >Book Now</a
+            >
+          </div>
+        </div>
+        <div
+          class="max-w-md min-w-[274px] w-1/4 bg-gray-100 text-center rounded-lg"
+        >
+          <div
+            class="w-auto h-52 bg-[url('./assets/images/service-2.jpg')] no-repeat bg-cover"
+          ></div>
+          <div class="py-4 px-4">
+            <h3 class="font-bold text-[#181c16] text-xl">
+              Recurring General Cleans
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              sed autem perspiciatis magnam eius excepturi voluptates aspernatur
+              fugiat obcaecati suscipit cumque accusantium, blanditiis odio
+              totam deserunt expedita veniam omnis. Natus.
+            </p>
+          </div>
+          <div class="pb-4">
+            <a
+              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg"
+              href="#contact"
+              >Book Now</a
+            >
+          </div>
+        </div>
+        <div
+          class="max-w-md min-w-[274px] w-1/4 bg-gray-100 text-center rounded-lg"
+        >
+          <div
+            class="w-auto h-48 bg-[url('./assets/images/service-3.jpg')] no-repeat bg-cover"
+          ></div>
+          <div class="py-4 px-4">
+            <h3 class="font-bold text-[#181c16] text-xl">
+              One Time Deep Clean / Recurring Clean
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+              sed autem perspiciatis magnam eius excepturi voluptates aspernatur
+              fugiat obcaecati suscipit cumque accusantium, blanditiis odio
+              totam deserunt expedita veniam omnis. Natus.
+            </p>
+          </div>
+          <div class="pb-4">
+            <a
+              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg"
+              href="#contact"
+              >Book Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- our services end -->
     <!-- contact us start -->
     <div class="pb-4" id="contact">
       <h3
