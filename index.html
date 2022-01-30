@@ -49,52 +49,73 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <script src="./assets/js/main.js" defer></script>
   </head>
-  <body
-    style="
-      font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-    "
-    class="text-[#181c16]"
-  >
+  <body class="text-[#181c16]">
     <!-- navbar -->
     <nav class="flex px-4 justify-between items-center py-2 shadow-md bg-white">
       <div>
         <img src="./assets/images/logo.png" alt="Real Right" class="w-16" />
       </div>
       <div class="relative">
-        <i class="fas fa-bars text-2xl sm:hidden" id="icon"></i>
+        <i class="fas fa-bars text-2xl sm:hidden cursor-pointer" id="icon"></i>
 
-        <ul class="sm:flex sm:space-x-4 hidden" id="menu">
+        <!-- desktop only menu -->
+
+        <ul class="sm:flex sm:space-x-4 hidden">
           <li class="py-2">
-            <a href="#home"> Home</a>
+            <a href="#home" class="hover:text-[#cf0015]"> Home</a>
           </li>
           <li class="py-2">
-            <a href="#about"> About</a>
+            <a href="#about" class="hover:text-[#cf0015]"> About</a>
           </li>
           <li class="py-2">
-            <a href="#services"> Services</a>
+            <a href="#services" class="hover:text-[#cf0015]"> Services</a>
           </li>
           <li class="py-2">
-            <a href="#contact" class="bg-[#cf0015] p-2 rounded-md text-white">
+            <a
+              href="#contact"
+              class="hover:text-[#cf0015] bg-[#cf0015] p-2 rounded-md text-white"
+            >
               Contact Us</a
             >
           </li>
         </ul>
 
-        <div class="bg-red-100 w-40 h-screen absolute bottom-96">
+        <!-- desktop only menu -->
+
+        <!-- mobile only menu -->
+        <div
+          class="bg-gray-100 w-48 text-center h-screen absolute -top-6 -right-60 z-50"
+          id="menu"
+        >
+          <div class="flex justify-end h-8 pb-4 mb-8">
+            <i
+              class="far fa-times-circle mr-4 mt-4 cursor-pointer text-2xl"
+              id="close"
+            ></i>
+          </div>
           <ul class="sm:flex sm:space-x-4" id="menu">
-            <li class="py-2">
-              <a href="#home" class="hover:text-[#cf0015]"> Home</a>
+            <li class="py-4">
+              <a onClick="closeMenu()" href="#home" class="hover:text-[#cf0015]">
+                Home</a
+              >
             </li>
-            <li class="py-2">
-              <a href="#about" class="hover:text-[#cf0015]"> About</a>
+            <li class="py-4">
+              <a onClick="closeMenu()" href="#about" class="hover:text-[#cf0015]">
+                About</a
+              >
             </li>
-            <li class="py-2">
-              <a href="#services" class="hover:text-[#cf0015]"> Services</a>
-            </li>
-            <li class="py-2">
+            <li class="py-4">
               <a
+                onClick="closeMenu()"
+                href="#services"
+                class="hover:text-[#cf0015]"
+              >
+                Services</a
+              >
+            </li>
+            <li class="py-4">
+              <a
+                onClick="closeMenu()"
                 href="#contact"
                 class="bg-[#cf0015] p-2 rounded-md text-white hover:bg-[#cf0010]"
               >
@@ -103,6 +124,7 @@
             </li>
           </ul>
         </div>
+        <!-- mobile only menu -->
       </div>
     </nav>
     <!-- navbar finished -->
@@ -111,13 +133,15 @@
       class="bg-[url('./assets/images/home.jpg')] h-96 bg-cover bg-no-repeat bg-center sm:h-[70vh] lg:h-[90vh]"
       id="home"
     >
-      <div class="w-11/12 mx-auto absolute bottom-40 left-20">
+      <div
+        class="w-11/12 mx-auto absolute left-5 lg:bottom-40 lg:left-20 bottom-80 sm:left-20"
+      >
         <h1
-          class="text-xl font-semibold mb-4 text-white lg:text-5xl max-w-2xl leading-4"
+          class="text-lg sm:text-3xl max-w-xs font-semibold mb-4 text-white lg:text-5xl lg:max-w-2xl leading-8"
         >
           The
           <span
-            class="underline decoration-wavy decoration-4 decoration-[#cf0015] underline-offset-8"
+            class="underline decoration-wavy lg:decoration-4 decoration-2 decoration-[#cf0015] underline-offset-8"
             >Best Cleaning Service </span
           >in the country
         </h1>
@@ -223,12 +247,14 @@
       >
         Contact Us
       </h3>
-      <div class="flex w-11/12 mx-auto items-center justify-around">
-        <div class="basis-1/2">
+      <div
+        class="lg:flex lg:w-11/12 lg:mx-auto lg:items-center lg:justify-around"
+      >
+        <div class="basis-1/2 lg:block hidden">
           <img
             src="./assets/images/contact.jpg"
             alt="Contact Us"
-            class="max-w-xs rounded-tl-3xl rounded-br-3xl ml-20"
+            class="max-w-xs rounded-tl-3xl rounded-br-3xl ml-20 lg:block hidden"
           />
         </div>
         <form action="" class="w-11/12 mx-auto mt-4 max-w-md">
