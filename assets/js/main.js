@@ -141,3 +141,8 @@ function btn3() {
 }
 
 /* Mobile testimonial btn end*/
+
+// for redirection after form submission
+
+const redirect = document.getElementById("redirect");
+redirect.value = window.location.href;

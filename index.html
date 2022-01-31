@@ -14,6 +14,8 @@
       name="description"
     />
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Favicon -->
     <link href="./assets/images/logo.png" rel="icon" />
 
@@ -30,20 +32,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <!-- bootstrap js -->
-    <!-- <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script> -->
 
     <link rel="stylesheet" href="./assets/styles/build.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
@@ -92,7 +80,7 @@
                 Services</a
               >
             </li>
-            <li class="py-2">
+            <li class="py-2" style="margin-right: 1rem">
               <a
                 href="#contact"
                 class="ring-2 ring-[#cf0015] p-2 rounded-md text-black hover:text-black"
@@ -418,19 +406,27 @@
           id="contactform"
           action="https://formsubmit.io/send/Real.Right.Info@gmail.com"
           method="POST"
-          class="w-11/12 mx-auto mt-4 max-w-md"
+          class="w-11/12 mx-auto max-w-md"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+          "
         >
+          <input name="_redirect" type="hidden" id="redirect" />
           <input name="_formsubmit_id" type="text" style="display: none" />
           <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
               id="floatingInput"
-              placeholder="Jhon Doe"
+              placeholder=" "
               name="name"
               required
+              autocomplete="off"
             />
-            <label for="floatingInput">Your Name</label>
+            <label for="floatingInput" class="form-label">Your Name</label>
           </div>
           <div class="form-floating mb-3">
             <input
@@ -438,10 +434,11 @@
               class="form-control"
               id="floatingInput"
               name="email"
-              placeholder="name@example.com"
+              placeholder=" "
+              autocomplete="off"
               required
             />
-            <label for="floatingInput">Email address</label>
+            <label for="floatingInput" class="form-label">Email address</label>
           </div>
           <div class="form-floating mb-3">
             <input
@@ -449,27 +446,31 @@
               class="form-control"
               id="floatingInput"
               name="subject"
-              placeholder="Subject"
+              autocomplete="off"
+              placeholder=" "
               required
             />
-            <label for="floatingInput">Subject</label>
+            <label for="floatingInput" class="form-label">Subject</label>
           </div>
           <div class="form-floating">
             <textarea
               class="form-control"
-              placeholder="Message"
+              placeholder=" "
               id="floatingTextarea2"
               name="message"
-              style="height: 150px"
+              style="height: 150px; resize: none"
+              cols="30"
+              autocomplete="off"
               required
             ></textarea>
-            <label for="floatingTextarea2">Message</label>
+            <label for="floatingTextarea2" class="form-label">Message</label>
           </div>
           <div class="grid place-items-center sm:block">
             <input
               type="submit"
               value="Send Message"
               class="px-4 mt-2 text-white font-semibold rounded-lg py-2 bg-[#cf0015] hover:bg-red-700"
+              style="cursor: pointer"
             />
           </div>
         </form>

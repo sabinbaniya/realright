@@ -14,6 +14,54 @@ body {
   width: 100vw;
 }
 
+/* floating label css start */
+
+.form-floating {
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  border: solid 2px #6b7280;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  min-width: 10rem;
+}
+
+.form-label {
+  position: absolute;
+  font-size: 1rem;
+  padding-left: 4px;
+  padding-right: 4px;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: text;
+  background-color: white;
+
+  transition: top 0.2s ease-in-out, left 0.2s ease-in-out,
+    font-size 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  outline: solid 2px #cf0015;
+  border: none;
+}
+
+.form-control:focus ~ .form-label,
+.form-control:not(:placeholder-shown).form-control:not(:focus) ~ .form-label {
+  top: -0.7rem;
+  left: 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* floating label css end */
+
 .hero::before {
   background-image: url("../images/home.webp");
   background-size: cover;
