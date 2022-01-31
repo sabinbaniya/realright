@@ -60,7 +60,7 @@
 
         <!-- desktop only menu -->
 
-        <ul class="sm:flex sm:space-x-4 hidden">
+        <ul class="sm:flex sm:space-x-4 md:space-x-6 hidden">
           <li class="py-2">
             <a
               href="#home"
@@ -152,7 +152,7 @@
     </nav>
     <!-- navbar finished -->
     <!-- hero start -->
-    <div class="h-screen hero relative" id="home">
+    <div class="h-[90vh] hero relative" id="home">
       <div
         class="w-11/12 mx-auto absolute left-5 lg:left-20 bottom-44 sm:left-20"
       >
@@ -172,18 +172,18 @@
     </div>
     <!-- hero end -->
     <!-- about us start -->
-    <div class="py-4 mx-auto pt-4" id="about">
+    <div class="min-h-screen py-4 mx-auto" id="about">
       <h3
-        class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
+        class="text-center font-semibold text-2xl pt-4 underline decoration-4 decoration-[#cf0015] underline-offset-4"
       >
         About Us
       </h3>
-      <div class="py-4 w-11/12 mx-auto sm:flex">
+      <div class="py-4 pt-8 w-11/12 mx-auto flex-col lg:flex-row sm:flex">
         <div class="flex justify-center items-center basis-1/2">
           <img
             src="./assets/images/about.jpg"
             alt="About Us"
-            class="w-auto h-52 rounded-br-3xl rounded-tl-3xl sm:h-72"
+            class="w-96 h-auto rounded-br-3xl rounded-tl-3xl sm:h-72"
           />
         </div>
         <div class="py-4 text-center basis-1/2">
@@ -194,6 +194,24 @@
             business. We take pride in our work and hope you schedule a
             walk-through TODAY!
           </p>
+        </div>
+      </div>
+      <div
+        class="w-10/12 drop-shadow-md sm:flex-row flex flex-col justify-between space-y-4 sm:space-y-0 items-center p-2 mx-auto rounded-lg lg:mt-14 max-w-screen-lg"
+      >
+        <div class="text-center px-4 py-2 bg-white drop-shadow-md rounded-lg">
+          <p class="text-[#cf0015] font-extrabold md:text-3xl sm:text-xl">10</p>
+          <p class="sm:text-lg md: text-xl">Happy Clients</p>
+        </div>
+        <div class="text-center px-4 py-2 bg-white drop-shadow-md rounded-lg">
+          <p class="text-[#cf0015] font-extrabold md:text-3xl sm:text-xl">
+            4000+
+          </p>
+          <p class="sm:text-lg md: text-xl">Hours Worked</p>
+        </div>
+        <div class="text-center px-4 py-2 bg-white drop-shadow-md rounded-lg">
+          <p class="text-[#cf0015] font-extrabold md:text-3xl sm:text-xl">15</p>
+          <p class="sm:text-lg md: text-xl">Expert Workers</p>
         </div>
       </div>
     </div>
@@ -231,8 +249,12 @@
         </div>
 
         <div class="testimonial testimonial3 rounded-lg">
-          <img src="./assets/images/avatar-richard.png" alt="Richard Shanai" />
-          <p class="name">Richard Watts</p>
+          <img
+            src="./assets/images/avatar-lisa.jpg"
+            alt="Lisa Wyatts"
+            class="rounded-full"
+          />
+          <p class="name">Lisa Wyatts</p>
           <p>
             “Our Dentist Office Was doing a Complete remodel of our office. We
             Only needed a one time deep clean while we searched for a cleaning
@@ -273,11 +295,11 @@
         class="flex flex-col lg:flex-row h-full space-y-6 lg:space-y-0 justify-evenly items-center flex-wrap pt-4"
       >
         <div
-          class="drop-shadow-md max-w-md w-1/4 bg-gray-100 text-center rounded-lg"
+          class="drop-shadow-md max-w-md hover:scale-105 transition w-1/4 bg-gray-100 text-center rounded-lg"
           style="min-width: 340px"
         >
           <div
-            class="w-auto h-52 bg-[url('./assets/images/service-1.jpg')] no-repeat bg-cover"
+            class="w-auto h-52 bg-[url('./assets/images/service-1.jpg')] no-repeat bg-cover rounded-tl-lg rounded-tr-lg"
           ></div>
           <div class="py-4 px-4">
             <h3 class="font-bold text-[#181c16] text-xl">
@@ -295,18 +317,18 @@
           </div>
           <div class="pb-4">
             <a
-              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg"
+              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg hover:bg-red-700"
               href="#contact"
               >Book Now</a
             >
           </div>
         </div>
         <div
-          class="drop-shadow-md max-w-md w-1/4 bg-gray-100 text-center rounded-lg"
+          class="drop-shadow-md max-w-md hover:scale-105 transition w-1/4 bg-gray-100 text-center rounded-lg"
           style="min-width: 340px"
         >
           <div
-            class="w-auto h-52 bg-[url('./assets/images/service-2.jpg')] no-repeat bg-cover"
+            class="w-auto h-52 bg-[url('./assets/images/service-2.jpg')] no-repeat bg-cover rounded-tl-lg rounded-tr-lg"
           ></div>
           <div class="py-4 px-4">
             <h3 class="font-bold text-[#181c16] text-xl">
@@ -326,18 +348,18 @@
           </div>
           <div class="pb-4">
             <a
-              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg"
+              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg hover:bg-red-700"
               href="#contact"
               >Book Now</a
             >
           </div>
         </div>
         <div
-          class="drop-shadow-md max-w-md w-1/4 bg-gray-100 text-center rounded-lg"
+          class="drop-shadow-md max-w-md hover:scale-105 transition w-1/4 bg-gray-100 text-center rounded-lg"
           style="min-width: 340px"
         >
           <div
-            class="w-auto h-48 bg-[url('./assets/images/service-3.jpg')] no-repeat bg-cover"
+            class="w-auto h-48 bg-[url('./assets/images/service-3.jpg')] no-repeat bg-cover rounded-tl-lg rounded-tr-lg"
           ></div>
           <div class="py-4 px-4">
             <h3 class="font-bold text-[#181c16] text-xl">
@@ -358,7 +380,7 @@
           </div>
           <div class="pb-4">
             <a
-              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg"
+              class="py-2 px-3 bg-[#cf0015] text-white rounded-lg hover:bg-red-700"
               href="#contact"
               >Book Now</a
             >
@@ -384,13 +406,19 @@
             class="max-w-xs rounded-tl-3xl rounded-br-3xl ml-20 lg:block hidden"
           />
         </div>
-        <form action="" class="w-11/12 mx-auto mt-4 max-w-md">
+        <form
+          action="https://formsubmit.io/send/Real.Right.Info@gmail.com"
+          method="POST"
+          class="w-11/12 mx-auto mt-4 max-w-md"
+        >
+          <input name="_formsubmit_id" type="text" style="display: none" />
           <div class="form-floating mb-3">
             <input
               type="text"
               class="form-control"
               id="floatingInput"
               placeholder="Jhon Doe"
+              name="name"
               required
             />
             <label for="floatingInput">Your Name</label>
@@ -400,6 +428,7 @@
               type="email"
               class="form-control"
               id="floatingInput"
+              name="email"
               placeholder="name@example.com"
               required
             />
@@ -410,6 +439,7 @@
               type="text"
               class="form-control"
               id="floatingInput"
+              name="subject"
               placeholder="Subject"
               required
             />
@@ -420,6 +450,7 @@
               class="form-control"
               placeholder="Message"
               id="floatingTextarea2"
+              name="message"
               style="height: 150px"
               required
             ></textarea>
@@ -437,7 +468,7 @@
     </div>
     <!-- contact us end -->
     <!-- footer start -->
-    <footer class="bg-[#181c16] text-white text-center py-2">
+    <footer class="bg-[#181c16] text-white text-center pt-2 pb-1">
       <p>Real Right Clean's LLC &copy; <span id="year"></span></p>
     </footer>
     <!-- footer end -->
