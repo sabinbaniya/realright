@@ -9,12 +9,11 @@ const menu = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
 
 function closeMenu() {
-  menu.classList.remove("-right-6");
-  menu.classList.add("-right-60");
+  menu.style.right = "-20rem";
 }
 
 icon.addEventListener("click", () => {
-  menu.classList.add("-right-6");
+  menu.style.right = "-1.5rem";
 });
 
 close.addEventListener("click", closeMenu);
