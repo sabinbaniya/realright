@@ -15,7 +15,7 @@ body {
 }
 
 .hero::before {
-  background-image: url("../images/home.jpg");
+  background-image: url("../images/home.webp");
   background-size: cover;
   background-position: center;
   content: "";
