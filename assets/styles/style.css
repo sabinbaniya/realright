@@ -73,6 +73,7 @@ body {
   padding-bottom: 2rem;
   text-align: center;
   min-height: 70%;
+  max-height: 380px;
   transform: translate(-50%, -50%);
   transition: left 0.2s ease-in-out;
 }

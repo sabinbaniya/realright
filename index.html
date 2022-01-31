@@ -51,94 +51,48 @@
   </head>
   <body class="text-[#181c16]">
     <!-- navbar -->
-    <nav class="flex px-4 justify-between items-center py-2 shadow-md bg-white">
-      <div>
-        <img src="./assets/images/logo.png" alt="Real Right" class="w-16" />
-      </div>
-      <div class="relative">
-        <i class="fas fa-bars text-2xl sm:hidden cursor-pointer" id="icon"></i>
+    <nav>
+      <div
+        class="flex px-4 justify-between items-center py-2 shadow-md bg-white"
+      >
+        <div>
+          <img src="./assets/images/logo.png" alt="Real Right" class="w-16" />
+        </div>
+        <div class="relative">
+          <i
+            class="fas fa-bars text-2xl sm:hidden cursor-pointer"
+            id="icon"
+          ></i>
 
-        <!-- desktop only menu -->
+          <!-- desktop only menu -->
 
-        <ul class="sm:flex sm:space-x-4 md:space-x-6 hidden">
-          <li class="py-2">
-            <a
-              href="#home"
-              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
-            >
-              Home</a
-            >
-          </li>
-          <li class="py-2">
-            <a
-              href="#about"
-              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
-            >
-              About</a
-            >
-          </li>
-          <li class="py-2">
-            <a
-              href="#services"
-              class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
-            >
-              Services</a
-            >
-          </li>
-          <li class="py-2">
-            <a
-              href="#contact"
-              class="ring-2 ring-[#cf0015] p-2 rounded-md text-black hover:text-black"
-            >
-              Contact Us</a
-            >
-          </li>
-        </ul>
-
-        <!-- desktop only menu -->
-
-        <!-- mobile only menu -->
-        <div
-          class="bg-gray-100 w-48 text-center h-screen absolute -top-6 -right-60 z-50"
-          id="menu"
-        >
-          <div class="flex justify-end h-8 pb-4 mb-8">
-            <i
-              class="far fa-times-circle mr-4 mt-4 cursor-pointer text-2xl"
-              id="close"
-            ></i>
-          </div>
-          <ul class="sm:flex sm:space-x-4" id="menu">
-            <li class="py-4">
+          <ul class="sm:flex sm:space-x-4 md:space-x-6 hidden">
+            <li class="py-2">
               <a
-                onClick="closeMenu()"
                 href="#home"
-                class="hover:text-[#cf0015]"
+                class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
               >
                 Home</a
               >
             </li>
-            <li class="py-4">
+            <li class="py-2">
               <a
-                onClick="closeMenu()"
                 href="#about"
-                class="hover:text-[#cf0015]"
+                class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
               >
                 About</a
               >
             </li>
-            <li class="py-4">
+            <li class="py-2">
               <a
-                onClick="closeMenu()"
                 href="#services"
-                class="hover:text-[#cf0015]"
+                class="hover:text-[#cf0015] hover:underline hover:decoration-[#cf0015] decoration-4 underline-offset-4"
               >
                 Services</a
               >
             </li>
-            <li class="py-4">
+            <li class="py-2">
               <a
-                onClick="closeMenu()"
                 href="#contact"
                 class="ring-2 ring-[#cf0015] p-2 rounded-md text-black hover:text-black"
               >
@@ -146,8 +100,61 @@
               >
             </li>
           </ul>
+
+          <!-- desktop only menu -->
+
+          <!-- mobile only menu -->
+          <div
+            class="bg-gray-100 w-48 text-center h-screen absolute -top-6 -right-60 z-50"
+            id="menu"
+          >
+            <div class="flex justify-end h-8 pb-4 mb-8">
+              <i
+                class="far fa-times-circle mr-4 mt-4 cursor-pointer text-2xl"
+                id="close"
+              ></i>
+            </div>
+            <ul class="sm:flex sm:space-x-4" id="menu">
+              <li class="py-4">
+                <a
+                  onClick="closeMenu()"
+                  href="#home"
+                  class="hover:text-[#cf0015]"
+                >
+                  Home</a
+                >
+              </li>
+              <li class="py-4">
+                <a
+                  onClick="closeMenu()"
+                  href="#about"
+                  class="hover:text-[#cf0015]"
+                >
+                  About</a
+                >
+              </li>
+              <li class="py-4">
+                <a
+                  onClick="closeMenu()"
+                  href="#services"
+                  class="hover:text-[#cf0015]"
+                >
+                  Services</a
+                >
+              </li>
+              <li class="py-4">
+                <a
+                  onClick="closeMenu()"
+                  href="#contact"
+                  class="ring-2 ring-[#cf0015] p-2 rounded-md text-black hover:text-black"
+                >
+                  Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- mobile only menu -->
         </div>
-        <!-- mobile only menu -->
       </div>
     </nav>
     <!-- navbar finished -->
@@ -172,7 +179,7 @@
     </div>
     <!-- hero end -->
     <!-- about us start -->
-    <div class="min-h-screen py-4 mx-auto" id="about">
+    <div class="min-h-screen py-4 mx-auto max-w-screen-lg" id="about">
       <h3
         class="text-center font-semibold text-2xl pt-4 underline decoration-4 decoration-[#cf0015] underline-offset-4"
       >
@@ -397,7 +404,7 @@
         Contact Us
       </h3>
       <div
-        class="lg:flex lg:w-11/12 lg:mx-auto lg:items-center lg:justify-around"
+        class="lg:flex lg:w-11/12 max-w-screen-lg lg:mx-auto lg:items-center lg:justify-around"
       >
         <div class="basis-1/2 lg:block hidden">
           <img
