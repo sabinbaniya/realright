@@ -152,7 +152,7 @@
     </nav>
     <!-- navbar finished -->
     <!-- hero start -->
-    <div class="hero h-screen" id="home">
+    <div class="h-screen hero relative" id="home">
       <div
         class="w-11/12 mx-auto absolute left-5 lg:left-20 bottom-44 sm:left-20"
       >
@@ -200,7 +200,7 @@
     <!-- about us finished -->
 
     <!-- testimonials start -->
-    <div>
+    <div class="min-h-screen">
       <h3
         class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
       >
@@ -212,9 +212,9 @@
           <img src="./assets/images/avatar-anisha.png" alt="Anisha Ali" />
           <p class="name">Anisha Li</p>
           <p>
-            “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps everyone
-            motivated.”
+            “Since the Covid-19 pandemic, My office never needed Real-Right more
+            now then ever. With my office being a high traffic area Real-Right
+            handled all our cleaning needs!”
           </p>
         </div>
 
@@ -222,9 +222,11 @@
           <img src="./assets/images/avatar-ali.png" alt="Ali Bravo" />
           <p class="name">Ali Bravo</p>
           <p>
-            “We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is
-            much more focused.”
+            “Our office was always messy and we have been searching for that
+            cleaning company we were comfortable with....And lets just say,
+            Real-Right Clean's Treats us just like family when we had an
+            issue/concern they were very on top of the issue! Highly
+            Recommended!”
           </p>
         </div>
 
@@ -232,9 +234,12 @@
           <img src="./assets/images/avatar-richard.png" alt="Richard Shanai" />
           <p class="name">Richard Watts</p>
           <p>
-            “Manage allows us to provide structure and process. It keeps us
-            organized and focused. I can’t stop recommending them to everyone I
-            talk to!”
+            “Our Dentist Office Was doing a Complete remodel of our office. We
+            Only needed a one time deep clean while we searched for a cleaning
+            company that fit us. We got the deep clean service done by Real
+            Right and decided to keep them as our everyday general cleaners!
+            Definately recommend this company to handle your commercial cleaning
+            needs!”
           </p>
         </div>
 
@@ -242,9 +247,10 @@
           <img src="./assets/images/avatar-shanai.png" alt="Shanai Gough" />
           <p class="name">Shanai Gough</p>
           <p>
-            “Their software allows us to track, manage and collaborate on our
-            projects from anywhere. It keeps the whole team in-sync without
-            being intrusive.”
+            “Never had my house cleaned before but these folks made it like a
+            dream. Came home and was amazed at how spotless everything was. The
+            whole process was so easy, they really helped me out when I was
+            needing it. Good value!”
           </p>
         </div>
       </div>
@@ -257,15 +263,18 @@
     </div>
     <!-- testimonials end -->
     <!-- our services start -->
-    <div id="services" class="h-screen">
+    <div id="services" class="min-h-screen">
       <h3
         class="pt-4 pb-4 text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
       >
         Our Services
       </h3>
-      <div class="flex justify-evenly items-center flex-wrap pt-4">
+      <div
+        class="flex flex-col lg:flex-row h-full space-y-6 lg:space-y-0 justify-evenly items-center flex-wrap pt-4"
+      >
         <div
-          class="max-w-md min-w-[274px] w-1/4 bg-gray-100 text-center rounded-lg"
+          class="drop-shadow-md max-w-md w-1/4 bg-gray-100 text-center rounded-lg"
+          style="min-width: 340px"
         >
           <div
             class="w-auto h-52 bg-[url('./assets/images/service-1.jpg')] no-repeat bg-cover"
@@ -274,12 +283,15 @@
             <h3 class="font-bold text-[#181c16] text-xl">
               One Time Deep Clean
             </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              sed autem perspiciatis magnam eius excepturi voluptates aspernatur
-              fugiat obcaecati suscipit cumque accusantium, blanditiis odio
-              totam deserunt expedita veniam omnis. Natus.
-            </p>
+            <ul class="text-left list-disc ml-14 mt-2">
+              <li>Sanitation</li>
+              <li>Deep clean</li>
+              <li>Vacuum</li>
+              <li>Restroom cleaning</li>
+              <li>Cleaning on Hard to reach areas</li>
+              <li>Full all around dusting</li>
+              <li>Trash management (Must have own dumpster/trash service)</li>
+            </ul>
           </div>
           <div class="pb-4">
             <a
@@ -290,7 +302,8 @@
           </div>
         </div>
         <div
-          class="max-w-md min-w-[274px] w-1/4 bg-gray-100 text-center rounded-lg"
+          class="drop-shadow-md max-w-md w-1/4 bg-gray-100 text-center rounded-lg"
+          style="min-width: 340px"
         >
           <div
             class="w-auto h-52 bg-[url('./assets/images/service-2.jpg')] no-repeat bg-cover"
@@ -299,12 +312,17 @@
             <h3 class="font-bold text-[#181c16] text-xl">
               Recurring General Cleans
             </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              sed autem perspiciatis magnam eius excepturi voluptates aspernatur
-              fugiat obcaecati suscipit cumque accusantium, blanditiis odio
-              totam deserunt expedita veniam omnis. Natus.
-            </p>
+            <ul class="text-left list-disc ml-8 mt-2">
+              <li>Trash management (Must Have own trash service/Dumpster)</li>
+              <li>General mopping/vacuuming and sweeping.</li>
+              <li>Regular dusting</li>
+              <li>Restroom management</li>
+              <li>Sanitation of high traffic areas</li>
+              <li>
+                Covid-19 prevention management (once every 2 weeks if requested
+                otherwise)
+              </li>
+            </ul>
           </div>
           <div class="pb-4">
             <a
@@ -315,21 +333,28 @@
           </div>
         </div>
         <div
-          class="max-w-md min-w-[274px] w-1/4 bg-gray-100 text-center rounded-lg"
+          class="drop-shadow-md max-w-md w-1/4 bg-gray-100 text-center rounded-lg"
+          style="min-width: 340px"
         >
           <div
             class="w-auto h-48 bg-[url('./assets/images/service-3.jpg')] no-repeat bg-cover"
           ></div>
           <div class="py-4 px-4">
             <h3 class="font-bold text-[#181c16] text-xl">
-              One Time Deep Clean / Recurring Clean
+              Reccurring / One deep clean
             </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-              sed autem perspiciatis magnam eius excepturi voluptates aspernatur
-              fugiat obcaecati suscipit cumque accusantium, blanditiis odio
-              totam deserunt expedita veniam omnis. Natus.
-            </p>
+            <ul class="text-left list-disc ml-8 mt-2">
+              <li>Deep clean of property</li>
+              <li>High / Regular dusting</li>
+              <li>Vacuuming/sweeping and mopping</li>
+              <li>Restroom management</li>
+              <li>
+                Covid-19 prevention management (once every 2 weeks if requested
+                otherwise)
+              </li>
+              <li>Sanitation of high traffic areas</li>
+              <li>Trash management (Must Have own trash service/Dumpster)</li>
+            </ul>
           </div>
           <div class="pb-4">
             <a
@@ -343,7 +368,7 @@
     </div>
     <!-- our services end -->
     <!-- contact us start -->
-    <div class="pb-4" id="contact">
+    <div class="py-4 h-screen mt-44" id="contact">
       <h3
         class="text-center font-semibold text-2xl underline decoration-4 decoration-[#cf0015] underline-offset-4"
       >

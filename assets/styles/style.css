@@ -17,7 +17,6 @@ body {
 .hero::before {
   background-image: url("../images/home.jpg");
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   content: "";
   display: block;
@@ -52,20 +51,21 @@ body {
 }
 
 .visible-testimonial {
-  height: 60vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100vw;
   overflow: hidden;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 
 .testimonial {
-  background-color: rgb(236, 236, 236);
-  height: 75%;
+  background-color: #f3f4f6;
+  height: 88%;
   width: 40%;
   position: absolute;
   margin: 2%;
