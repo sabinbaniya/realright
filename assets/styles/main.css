@@ -1,3 +1,232 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* floating label css start */
+
+.form-floating {
+  position: relative;
+  width: 100%;
+}
+
+.form-control {
+  border: solid 2px #6b7280;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  min-width: 10rem;
+}
+
+.form-label {
+  position: absolute;
+  font-size: 1rem;
+  padding-left: 4px;
+  padding-right: 4px;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: text;
+  user-select: none;
+  background-color: white;
+
+  transition: top 0.2s ease-in-out, left 0.2s ease-in-out,
+    font-size 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  outline: solid 2px #cf0015;
+  border: none;
+}
+
+.form-control:focus ~ .form-label,
+.form-control:not(:placeholder-shown).form-control:not(:focus) ~ .form-label {
+  top: -0.7rem;
+  left: 0.6rem;
+  font-size: 0.8rem;
+}
+
+/* floating label css end */
+
+.hero::before {
+  background-image: url("../images/home.webp");
+  background-size: cover;
+  background-position: center;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  opacity: 0.8;
+}
+
+.hero::after {
+  background-color: #cf0015;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+}
+
+.hover-black:hover {
+  color: black;
+}
+
+#menu {
+  transition: right 0.2s ease-in-out;
+}
+
+.visible-testimonial {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.testimonial {
+  background-color: #f3f4f6;
+  height: 78%;
+  width: 40%;
+  position: absolute;
+  margin: 2%;
+  padding: 2%;
+  padding-bottom: 2rem;
+  text-align: center;
+  min-height: 70%;
+  transform: translate(-50%, -50%);
+  transition: left 0.2s ease-in-out;
+}
+
+.testimonial1 {
+  top: 50%;
+  left: 8%;
+  transition: left 0.4s ease-in-out;
+}
+
+.btns {
+  display: none;
+}
+
+.testimonial2 {
+  top: 50%;
+  left: 50%;
+  transition: left 0.4s ease-in-out;
+}
+
+.testimonial3 {
+  top: 50%;
+  left: 92%;
+  transition: left 0.4s ease-in-out;
+}
+
+.testimonial4 {
+  top: 50%;
+  left: 126%;
+  transition: left 0.4s ease-in-out;
+}
+
+.testimonial img {
+  position: absolute;
+  width: 70px;
+  top: -14%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.testimonial .name {
+  color: var(--DarkBlue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+}
+
+.btns {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .said {
+    padding-top: 2rem;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .testimonial {
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 55%;
+  }
+
+  .testimonial1 {
+    left: 50%;
+  }
+
+  .testimonial2 {
+    left: 150%;
+  }
+
+  .testimonial3 {
+    left: 150%;
+  }
+
+  .testimonial4 {
+    left: 150%;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .myBtn {
+    width: 15px;
+    height: 15px;
+    border: 1px #cf0015 solid;
+    border-radius: 50%;
+    margin: 0rem 0.3rem;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #cf0015;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
